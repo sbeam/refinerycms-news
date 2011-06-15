@@ -1,6 +1,8 @@
 class NewsItem < ActiveRecord::Base
   translates :title, :body, :external_url
-  
+
+  belongs_to :image, :class_name => 'Image'
+
   attr_accessor :locale # to hold temporarily
 
   alias_attribute :content, :body

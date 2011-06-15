@@ -1,6 +1,10 @@
 <% content_for :body_content_title, @news_item.title %>
 <% content_for :body_content_left do %>
   <article class="news_item">
+    <h1>
+      <%= @news_item.title %>
+    </h1>
+    <%= image_fu(@news_item.image, "440x400#c") unless @news_item.image.nil? %>
     <p>
       <small><%= t('.published') %> <%= l(@news_item.publish_date, :format => :long) %></small>
     </p>

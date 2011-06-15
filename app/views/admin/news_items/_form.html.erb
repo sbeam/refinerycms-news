@@ -27,6 +27,11 @@
   </div>
 
   <div class='field'>
+    <%= f.label :image %>
+    <%= render :partial => "/shared/admin/image_picker", :locals => {:f => f, :field => :image_id, :image => @news_item.image } %>
+  </div>
+
+  <div class='field'>
     <%= f.label :content %>
     <%= f.text_area :content, :rows => "20", :class => "wymeditor widest" %>
   </div>

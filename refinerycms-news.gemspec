@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name              = %q{refinerycms-news}
-  s.version           = %q{1.2.0}
+  s.version           = %q{1.2.1}
   s.description       = %q{A really straightforward open source Ruby on Rails news engine designed for integration with RefineryCMS.}
   s.date              = %q{2011-05-27}
   s.summary           = %q{Ruby on Rails news engine for RefineryCMS.}
